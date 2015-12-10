@@ -1,0 +1,9 @@
+name = "SupahMegaUltraMegaMenu"
+description = "Megamenu basado en el menu usado en https://www.gov.uk/browse/births-deaths-marriages"
+package = "Informatica Gobierno"
+version = 0.01
+core = "7.x"
+
+files[] = "smumm.module"
+
+configure = admin/structure/structure/supahmegaultramegamenu
