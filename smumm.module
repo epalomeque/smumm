@@ -23,6 +23,9 @@ function smumm_menu(){
 }
 
 function smumm_admin ($form, &$form_state) {
+  $los_menus = menu_get_menus(TRUE);
+  print_r($los_menus);
+
   $form = array();
 
   $form['smumm_departamento'] = array (
