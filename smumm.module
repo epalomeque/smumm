@@ -22,3 +22,30 @@ function smumm_menu(){
   return $items;
 }
 
+function smumm_admin ($form, &$form_state) {
+  $form = array();
+
+  $form['smumm_departamento'] = array (
+    '#title' => t('Departamento'),
+    '#type' => 'fieldset',
+    '#description' => t('Ingresa los datos del departamento de atención'),
+    '#collapsible' => TRUE,
+    );
+
+  return system_settings_form($form);
+}
+
+function smumm_admin_submit($form , &$form_state){
+  }
+
+/**
+* Implements hook_permission().
+*/
+function smumm_permission() {
+  return array(
+  'administer consulta_padron_proveedores settings' => array(
+  'title' => t('Administer smumm configurations'),
+  'restrict access' => true,
+  )
+  );
+  }
