@@ -22,6 +22,7 @@ function smumm_menu(){
   return $items;
 }
 
+//Formulario para administración de SMUMM
 function smumm_admin ($form, &$form_state) {
   $los_menus = menu_get_menus(TRUE);
   print_r($los_menus);
@@ -29,19 +30,19 @@ function smumm_admin ($form, &$form_state) {
   $form = array();
 
   $form['smumm_departamento'] = array (
-    '#title' => t('Departamento'),
+    '#title' => t('Menú'),
     '#type' => 'fieldset',
-    '#description' => t('Elige el menú que quieras usar para el SMUMM'),
+    '#description' => t('Datos del menu a usar'),
     '#collapsible' => TRUE,
     );
 
     $form['smumm_departamento']['selectbox'] = array(
     '#type' => 'select',
     '#title' => t('Elige el menu a utilizar:'),
-    '#default_value' => $los_menus[0],
+    '#default_value' => $los_menus[0] ,
     '#options' => $los_menus,
     '#description' => t('Elige el menu a utilizar:'),
-  );
+    );
 
 
   return system_settings_form($form);
