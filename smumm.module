@@ -11,7 +11,7 @@ include 'smumm-implements-block.inc';
 function smumm_menu(){
     // Menu de Administración
   $items['admin/structure/structure/supahmegaultramegamenu'] = array(
-    'title' => t('Configuración de smumm (SupahMegaUltraMegaMenu)'),
+    'title' => t('Configuración de SMUMM (SupahMegaUltraMegaMenu)'),
     'description' => t('Configurar el módulo SMUMM'),
     'page callback' => 'drupal_get_form',
     'page arguments' => array('smumm_admin'),
@@ -31,9 +31,18 @@ function smumm_admin ($form, &$form_state) {
   $form['smumm_departamento'] = array (
     '#title' => t('Departamento'),
     '#type' => 'fieldset',
-    '#description' => t('Ingresa los datos del departamento de atención'),
+    '#description' => t('Elige el menú que quieras usar para el SMUMM'),
     '#collapsible' => TRUE,
     );
+
+    $form['smumm_departamento']['selectbox'] = array(
+    '#type' => 'select',
+    '#title' => t('Elige el menu a utilizar:'),
+    '#default_value' => $node->selectbox,
+    '#options' => $los_menus,
+    '#description' => t('Elige el menu a utilizar:'),
+  );
+
 
   return system_settings_form($form);
 }
