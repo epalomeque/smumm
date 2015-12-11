@@ -21,7 +21,7 @@ function smumm_menu(){
 }
 
 // Implementa hook_block_info()
-function smum_block_info() {
+function smumm_block_info() {
     $blocks['bloque_smumm_menufront'] = array(
     // Título del bloque en la configuración del administrador 
     'info' => t('Menu SMUMM'),
