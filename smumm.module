@@ -1,0 +1,15 @@
+<?php
+/**
+* @date 11/12/2015
+* @author Emmanuel Palomeque Alcazar <epalomeque@gmail.com>
+*
+**/
+
+function smum_block_info() {
+    $blocks['bloque_smumm_menufront'] = array(
+    // Título del bloque en la configuración del administrador 
+    'info' => t('Cuenta - Boton Editar'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
