@@ -30,6 +30,7 @@
 
   if ( variable_get('eligeMenu') != null ) {
     $smumm_menu_block = menu_load(variable_get('eligeMenu'));
+    print_r($smumm_menu_block);
   } else { 
     $smumm_menu_block = 'eligeMenu es null';
   }
