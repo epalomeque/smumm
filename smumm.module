@@ -40,7 +40,7 @@ function smumm_admin ($form, &$form_state) {
   $form['eligePagina'] = array(
     '#type' => 'textfield',
     '#title' => t('Página destino'),
-    '#default_value' => variable_get('eligePagina',''),,
+    '#default_value' => variable_get('eligePagina',''),
     '#maxlength' => 127,
     '#description' => t('Nombre de la pagina que alojara el SMUMM'),
   );
