@@ -25,7 +25,7 @@ function smumm_menu(){
 //Formulario para administración de SMUMM
 function smumm_admin ($form, &$form_state) {
   $los_menus = menu_get_menus(TRUE);
-  //print_r($los_menus);
+  print_r($los_menus);
 
   $form = array();
 
