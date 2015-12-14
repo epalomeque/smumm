@@ -30,14 +30,13 @@
 
   if ( variable_get('eligeMenu') != null ) {
     $smumm_menu_navigation = menu_navigation_links(variable_get('eligeMenu'), 0);
-    dpm ($smumm_menu_navigation,'smumm_menu_navigation');
+    $smumm_menu_render = drupal_render($smumm_menu_navigation);
+    dpm ($smumm_menu_render, 'smumm_menu_render');
   } else { 
-    $smumm_menu_navigation = 'Debes elegir un menu en la pagina de configuración';
+    $smumm_menu_navigation = 'Debes elegir un menu en la página de configuración';
   }
 
-
-
-    return $smumm_menu_navigation;
+  return $smumm_menu_render;
   }
 
 ?>
