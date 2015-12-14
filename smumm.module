@@ -39,7 +39,7 @@ function smumm_admin ($form, &$form_state) {
     $form['smumm_departamento']['selectbox'] = array(
     '#type' => 'select',
     '#title' => t('Elige el menu a utilizar:'),
-    '#default_value' => $los_menus[0] ,
+    '#default_value' => 'Selecciona un menu para mostrar',
     '#options' => $los_menus,
     '#description' => t('Elige el menu a utilizar:'),
     );
