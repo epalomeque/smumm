@@ -19,7 +19,7 @@
         // Título del bloque.
         $block['subject'] = t('Menu SMUMM');
         // Función que retorna el contenido o función que se quiere en el bloque.
-        $block['content'] = drupal_render( smumm_crea_menu() );
+        $block['content'] = smumm_crea_menu();
         break;
       }
       return $block;
