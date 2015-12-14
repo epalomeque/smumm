@@ -27,9 +27,14 @@
 
   // Implementa funcion hook_boton_editar()
   function smumm_crea_menu() {
-    global $user;
-    $user_uid = $user->uid;
-    return l(t('Editar Cuenta'), "user/$user_uid/edit");
+
+  if ( variable_get('eligeMenu') != null ) {
+    $smumm_menu_block = menuload(variable_get('eligeMenu'));
+  } else { 
+    $smumm_menu_block = 'eligeMenu es null';
+  }
+
+    return $smumm_menu_block;
   }
 
 ?>
