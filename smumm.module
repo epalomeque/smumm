@@ -52,8 +52,9 @@ function smumm_admin ($form, &$form_state) {
   $form['smumm_configure']['eligePagina'] 
     '#type' => 'textfield',
     '#title' => t('Página destino'),
-    '#default_value' => NULL,
+    '#default_value' => '',
     '#maxlength' => 127,
+    '#description' => t('Nombre de la pagina que alojara el SMUMM'),
   );
 
   return system_settings_form($form);
