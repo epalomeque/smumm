@@ -1,0 +1,2 @@
+smumm_admin 	smumm_admin (${1:\$form}, ${2:&\$form_state})
+smumm_permission	smumm_permission()

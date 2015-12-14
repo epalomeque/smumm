@@ -1,0 +1,358 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"los",
+				"los_menus"
+			],
+			[
+				"in",
+				"include	(consulta_padron_proveedores.module)"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"mi-",
+				"min-width"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"field",
+				"field-item"
+			],
+			[
+				"documento",
+				"documentopdf	(node--archivopdf.tpl.php)"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"visbi",
+				"visibility"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 390.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 503.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/emmanuel/Documentos/01-En_proceso/smumm/smumm.module",
+		"/home/emmanuel/Documentos/02-Terminados/consulta_padron_proveedores/consulta_padron_proveedores.module",
+		"/home/emmanuel/Documentos/02-Terminados/consulta_padron_proveedores/aviso_proveedores_include.php",
+		"/home/emmanuel/Documentos/02-Terminados/consulta_padron_proveedores/busqueda_proveedores_include.php",
+		"/home/emmanuel/Documentos/01-En_proceso/smumm/smumm-implements-block.inc",
+		"/home/emmanuel/Documentos/01-En_proceso/smumm/smumm.info",
+		"/home/emmanuel/Documentos/01-En_proceso/supahmegaultramegamenu/smumm.module",
+		"/home/emmanuel/Documentos/01-En_proceso/supahmegaultramegamenu/smumm.info",
+		"/home/emmanuel/Documentos/01-En_proceso/supahmegaultramegamenu/supahmegaultramegamenu.info",
+		"/home/emmanuel/Documentos/02-Terminados/consulta_padron_proveedores/consulta_padron_proveedores.info",
+		"/home/emmanuel/Documentos/01-En_proceso/MegaMenuGOV-uk/tb_megamenu/tb_megamenu.ajax.inc",
+		"/home/emmanuel/Documentos/01-En_proceso/MegaMenuGOV-uk/tb_megamenu/tb_megamenu.info",
+		"/home/emmanuel/Documentos/01-En_proceso/MegaMenuGOV-uk/tb_megamenu/tb_megamenu.install",
+		"/home/emmanuel/Documentos/01-En_proceso/MegaMenuGOV-uk/tb_megamenu/tb_megamenu.admin.inc",
+		"/home/emmanuel/Documentos/01-En_proceso/MegaMenuGOV-uk/tb_megamenu/tb_megamenu.module",
+		"/home/emmanuel/Documentos/01-En_proceso/MegaMenuGOV-uk/tb_megamenu/tb_megamenu.functions.inc",
+		"/home/emmanuel/Documentos/01-En_proceso/MegaMenuGOV-uk/tb_megamenu/tb_megamenu.themes.inc",
+		"/home/emmanuel/Documentos/01-En_proceso/MegaMenuGOV-uk/tb_megamenu/LICENSE.txt",
+		"/home/emmanuel/Documentos/01-En_proceso/MegaMenuGOV-uk/tt-menu/vertical.html",
+		"/home/emmanuel/Documentos/01-En_proceso/MegaMenuGOV-uk/tt-menu/js/ttmenu.js",
+		"/home/emmanuel/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/emmanuel/Documentos/grid.html",
+		"/home/emmanuel/Documentos/01-En_proceso/MegaMenuGOV-uk/menustyles.css",
+		"/home/emmanuel/Documentos/01-En_proceso/portaltabasco/page--403.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/portaltabasco/page--404.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/portaltabasco/template.php",
+		"/home/emmanuel/Documentos/01-En_proceso/portaltabasco/theme-settings.php",
+		"/home/emmanuel/Documentos/01-En_proceso/portaltabasco/html.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/portaltabasco/page.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/portaltabasco/node.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/node--archivopdf.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/template.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/node--archivopdf.tpl.php.bak",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/viewer.css",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/viewer.html",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/style.css",
+		"/home/emmanuel/Documentos/nombres.csv",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/node--archivo-pdf.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/node-- archivo_pdf.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/portaltabasco.info",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/pdf.field.inc",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/pdf.module",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/pdf.css",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-fields--category-latest-posts--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-fields--category-slide-show--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-fields--home-category.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-fields--home-slide-show--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-fields--latest-posts--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-fields--post-grid--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-fields--related-posts--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-fields--tab-comments--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-fields--tab-popular--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-fields--tab-recent--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-fields--tab-tags--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-unformatted--category-latest-posts--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-unformatted--category-slide-show--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-unformatted--home-category.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-unformatted--home-slide-show--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-unformatted--latest-posts--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-unformatted--post-grid--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-unformatted--tab-comments--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-unformatted--tab-popular--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-unformatted--tab-recent--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/views-view-unformatted--tab-tags--block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/mystyle.css",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/html.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/node.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/PDF-JS/pdf.js/web/settings.php",
+		"/home/emmanuel/Descargas/pdf.js/web/compatibility.js",
+		"/home/emmanuel/Descargas/pdf.js/web/debugger.js",
+		"/home/emmanuel/Descargas/pdf.js/web/shortcut.js",
+		"/home/emmanuel/Descargas/pdf.js/web/l10n.js",
+		"/home/emmanuel/Descargas/pdf.js/web/viewer.css",
+		"/home/emmanuel/Descargas/pdf.js/web/viewer.html",
+		"/home/emmanuel/Descargas/pdf.js/web/viewer.js",
+		"/home/emmanuel/Descargas/pdf/js/pdf.js",
+		"/home/emmanuel/Descargas/pdf/js/default.js",
+		"/home/emmanuel/Descargas/pdf/js/acrobat_detection.js",
+		"/home/emmanuel/Descargas/pdf/includes/pdf.field.inc",
+		"/home/emmanuel/Descargas/pdf/pdf.module",
+		"/home/emmanuel/Descargas/pdf/pdf.install",
+		"/home/emmanuel/Descargas/pdf/pdf.info",
+		"/home/emmanuel/Descargas/pdf/LICENSE.txt",
+		"/home/emmanuel/Descargas/shortcut.js",
+		"/home/emmanuel/Escritorio/nombres.csv",
+		"/home/emmanuel/Descargas/pdf.js/build/pdf.worker.js",
+		"/home/emmanuel/Descargas/pdf.js/build/pdf.js",
+		"/home/emmanuel/Documentos/01-En_proceso/directorios/xls/html/ST-directorio-original.html",
+		"/home/emmanuel/Documentos/01-En_proceso/directorios/xls/html/SA-directorio-original.html",
+		"/home/emmanuel/Documentos/01-En_proceso/directorios/xls/html/SA directorio.html",
+		"/home/emmanuel/Documentos/01-En_proceso/directorios/xls/html/SA-directorio-original.hmtl",
+		"/home/emmanuel/Documentos/01-En_proceso/directorios/xls/html/DGTIC-directorio-bueno.html",
+		"/home/emmanuel/Documentos/01-En_proceso/directorios/orignal-dgtic.html",
+		"/home/emmanuel/Documentos/01-En_proceso/directorios/xls/html/DGTIC directorio_original.html",
+		"/home/emmanuel/Descargas/directorios/SA directorio.html",
+		"/home/emmanuel/Descargas/directorios/ST directorio.html",
+		"/home/emmanuel/Descargas/directorios/SA directorio.hmtl",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/region.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/node.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/page.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/html.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/template.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--content_col2-1.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--content_col2-2.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--content_col3-1.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--content_col3-2.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--content_col3-3.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--content_col4-1.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--content_col4-2.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--content_col4-3.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--content_col4-4.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--content_row2.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--content_row3.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--content_row4.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--footer.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--sidebar_first.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--sidebar_second.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap_intermedio/templates/page.tpl.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap_intermedio/template.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/bootstrap.api.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/templates/system/region.vars.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/templates/system/page.vars.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/includes/common.inc",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/template.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/templates/system/html.vars.php",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap_intermedio/maqueta/css/estilos.css",
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap_intermedio/maqueta/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"consulta_padron_proveedores",
+			"consulta_padron_proveedores_admin",
+			"\"",
+			"::before",
+			",",
+			"field",
+			"field-label",
+			"even",
+			",",
+			"MATERNO",
+			"PATERNO,MATERNO",
+			",",
+			"NOMBRE",
+			"download",
+			".download",
+			"#download",
+			"</td><",
+			"<td>",
+			"></tr>",
+			"<tr><",
+			"<tr>",
+			"td",
+			",",
+			"  ",
+			"td",
+			"  ",
+			",",
+			"td",
+			"<dt>",
+			"  ",
+			",",
+			"td",
+			">\n</td></tr>",
+			"</td></tr>",
+			"\n",
+			"\n\n",
+			"\n",
+			"  ",
+			",",
+			"	",
+			"td",
+			"<tr>",
+			",",
+			">\n",
+			"section",
+			"\"></",
+			"    <header></header>\n    <nav></nav>\n    <body>\n      \n    </body>\n    <footer></footer>"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" ",
+			"</td></tr>\n</td></tr>\n",
+			"</td></tr>\n"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 189.0,
+	"status_bar_visible": true
+}
