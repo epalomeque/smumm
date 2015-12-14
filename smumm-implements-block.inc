@@ -44,7 +44,7 @@
     $smumm_menu_navigation = 'Debes elegir un menu en la página de configuración';
   }
 
-  return $smumm_menu_render;
+  return $smumm_menu_navigation;
   }
 
 ?>
