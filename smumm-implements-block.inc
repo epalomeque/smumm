@@ -30,8 +30,7 @@
 
   if ( variable_get('eligeMenu') != null ) {
     $smumm_menu_navigation = menu_navigation_links(variable_get('eligeMenu'), 0);
-    print '<br />:::smumm_menu_tree<br />';
-    print_r($smumm_menu_navigation);
+    print theme(variable_get('eligeMenu'), array('links' => $smumm_menu_navigation));
     
     // $smumm_menu_block = menu_load(variable_get('eligeMenu'));
     // print '<br />:::smumm_menu_block<br />';
@@ -46,10 +45,10 @@
     // print_r($smumm_menu_block_links);    
 
   } else { 
-    $smumm_menu_block = 'eligeMenu es null';
+    $smumm_menu_navigation = 'eligeMenu es null';
   }
 
-    return $smumm_menu_block;
+    return $smumm_menu_navigation;
   }
 
 ?>
