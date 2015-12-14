@@ -29,7 +29,7 @@
   function smumm_crea_menu() {
 
   if ( variable_get('eligeMenu') != null ) {
-    $smumm_menu_block = menuload(variable_get('eligeMenu'));
+    $smumm_menu_block = menu_load(variable_get('eligeMenu'));
   } else { 
     $smumm_menu_block = 'eligeMenu es null';
   }
