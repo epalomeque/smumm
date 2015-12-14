@@ -37,7 +37,7 @@
     print '<br />:::smumm_menu_block_all<br />';
     print_r($smumm_menu_block_all);
 
-    $smumm_menu_block_links = menu_load_all(variable_get('eligeMenu'));
+    $smumm_menu_block_links = menu_load_links(variable_get('eligeMenu'));
     print '<br />:::smumm_menu_block_links<br />';
     print_r($smumm_menu_block_links);    
   } else { 
