@@ -19,7 +19,7 @@
         // Título del bloque.
         $block['subject'] = t('Menu SMUMM');
         // Función que retorna el contenido o función que se quiere en el bloque.
-        $block['content'] = smumm_crea_menu();
+        $block['content'] = print( 'links', smumm_crea_menu() );
         break;
       }
       return $block;
@@ -29,8 +29,7 @@
   function smumm_crea_menu() {
 
   if ( variable_get('eligeMenu') != null ) {
-    $smumm_menu_navigation = menu_navigation_links(variable_get('eligeMenu'), 0);
-    print theme(variable_get('eligeMenu'), array('links' => $smumm_menu_navigation));
+    $smumm_menu_navigation = menu_navigation_links(variable_get('eligeMenu'), 1);
     
     // $smumm_menu_block = menu_load(variable_get('eligeMenu'));
     // print '<br />:::smumm_menu_block<br />';
