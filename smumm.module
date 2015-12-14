@@ -26,33 +26,21 @@ function smumm_menu(){
 function smumm_admin ($form, &$form_state) {
   $los_menus = menu_get_menus(TRUE);
   print_r($los_menus);
-  if (isset($GLOBALS['smumm_MenuElegido']) ) {
-    print 'smumm_MenuElegido:';
-    print_r($GLOBALS['smumm_MenuElegido']);
-  }
-
 
   $form = array();
 
-  $form['smumm_configure'] = array (
-    '#title' => t('Menú'),
-    '#type' => 'fieldset',
-    '#description' => t('Datos del menu a usar'),
-    '#collapsible' => TRUE,
-    );
-
-  $form['smumm_configure']['eligeMenu'] = array(
+  $form['eligeMenu'] = array(
     '#type' => 'select',
     '#title' => t('Elige el menu a utilizar:'),
-    '#default_value' => variable_get('smumm_MenuElegido',''),
+    '#default_value' => variable_get('eligeMenu',''),
     '#options' => $los_menus,
     '#description' => t('El menu que se mostrara en la pagina seleccionada'),
     );
 
-  $form['smumm_configure']['eligePagina'] 
+  $form['eligePagina'] 
     '#type' => 'textfield',
     '#title' => t('Página destino'),
-    '#default_value' => '',
+    '#default_value' => variable_get('eligePagina',''),,
     '#maxlength' => 127,
     '#description' => t('Nombre de la pagina que alojara el SMUMM'),
   );
