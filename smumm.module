@@ -29,10 +29,10 @@ function smumm_admin ($form, &$form_state) {
 
   if ( variable_get('eligeMenu') != null ) {
     print_r(variable_get('eligeMenu'));
-  }
+  } else { print 'eligeMenu es null';}
   if ( variable_get('eligePagina') != null ) {
     print_r(variable_get('eligePagina'));
-  }
+  } else { print 'eligePagina es null';}
 
   $form = array();
 
