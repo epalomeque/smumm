@@ -30,7 +30,7 @@
 
   if ( variable_get('eligeMenu') != null ) {
     $smumm_menu_navigation = menu_navigation_links(variable_get('eligeMenu'), 1);
-    dpm ('$smumm_menu_navigation','smumm_menu_navigation');
+    dpm ('smumm_menu_navigation','smumm_menu_navigation');
   } else { 
     $smumm_menu_navigation = 'Debes elegir un menu en la pagina de configuración';
   }
