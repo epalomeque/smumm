@@ -27,10 +27,10 @@ function smumm_admin ($form, &$form_state) {
   $los_menus = menu_get_menus(TRUE);
   print_r($los_menus);
 
-  if ( variable_get(eligeMenu) != null )) {
+  if ( variable_get(eligeMenu) != null ) {
     print_r(variable_get(eligeMenu));
   }
-  if ( variable_get(eligePagina) != null )) {
+  if ( variable_get(eligePagina) != null ) {
     print_r(variable_get(eligePagina));
   }
 
