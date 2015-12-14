@@ -28,13 +28,18 @@
   // Implementa funcion hook_boton_editar()
   function smumm_crea_menu() {
 
+  //Limpia los mensajes actuales
   drupal_set_message();
 
   if ( variable_get('eligeMenu') != null ) {
-    $smumm_menu_navigation = menu_navigation_links(variable_get('eligeMenu'), 0);
+    //$smumm_menu_navigation = menu_navigation_links(variable_get('eligeMenu'), 0);
+    //dpm ($smumm_menu_navigation, 'smumm_menu_navigation');
+    
+    $smumm_menu_navigation = menu_tree( variable_get('eligeMenu') );
     dpm ($smumm_menu_navigation, 'smumm_menu_navigation');
-    $smumm_menu_render = drupal_render($smumm_menu_navigation);
-    dpm ($smumm_menu_render, 'smumm_menu_render');
+
+    // $smumm_menu_render = drupal_render($smumm_menu_navigation);
+    // dpm ($smumm_menu_render, 'smumm_menu_render');
   } else { 
     $smumm_menu_navigation = 'Debes elegir un menu en la página de configuración';
   }
