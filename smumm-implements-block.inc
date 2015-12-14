@@ -29,9 +29,9 @@
   function smumm_crea_menu() {
 
   if ( variable_get('eligeMenu') != null ) {
-    $smumm_menu_tree = menu_tree(variable_get('eligeMenu'));
+    $smumm_menu_navigation = menu_navigation_links(variable_get('eligeMenu'), 0);
     print '<br />:::smumm_menu_tree<br />';
-    print_r($smumm_menu_tree);
+    print_r($smumm_menu_navigation);
     
     // $smumm_menu_block = menu_load(variable_get('eligeMenu'));
     // print '<br />:::smumm_menu_block<br />';
