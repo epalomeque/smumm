@@ -29,27 +29,32 @@ function smumm_admin ($form, &$form_state) {
   if (isset($GLOBALS['smumm_MenuElegido']) ) {
     print 'smumm_MenuElegido:';
     print_r($GLOBALS['smumm_MenuElegido']);
-
   }
 
 
   $form = array();
 
-  $form['smumm_departamento'] = array (
+  $form['smumm_configure'] = array (
     '#title' => t('Menú'),
     '#type' => 'fieldset',
     '#description' => t('Datos del menu a usar'),
     '#collapsible' => TRUE,
     );
 
-    $form['smumm_departamento']['selectbox'] = array(
+  $form['smumm_configure']['eligeMenu'] = array(
     '#type' => 'select',
     '#title' => t('Elige el menu a utilizar:'),
-    '#default_value' => variable_get('smumm_MenuElegido'),
+    '#default_value' => variable_get('smumm_MenuElegido',''),
     '#options' => $los_menus,
-    '#description' => t('Elige el menu a utilizar:'),
+    '#description' => t('El menu que se mostrara en la pagina seleccionada'),
     );
 
+  $form['smumm_configure']['eligePagina'] 
+    '#type' => 'textfield',
+    '#title' => t('Página destino'),
+    '#default_value' => NULL,
+    '#maxlength' => 127,
+  );
 
   return system_settings_form($form);
 }
