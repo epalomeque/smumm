@@ -26,6 +26,12 @@ function smumm_menu(){
 function smumm_admin ($form, &$form_state) {
   $los_menus = menu_get_menus(TRUE);
   print_r($los_menus);
+  if (isset($GLOBALS['smumm_MenuElegido']) ) {
+    print 'smumm_MenuElegido:';
+    print_r($GLOBALS['smumm_MenuElegido']);
+
+  }
+
 
   $form = array();
 
@@ -39,7 +45,7 @@ function smumm_admin ($form, &$form_state) {
     $form['smumm_departamento']['selectbox'] = array(
     '#type' => 'select',
     '#title' => t('Elige el menu a utilizar:'),
-    '#default_value' => variable_get('smumm_MenuElegido', ""),
+    '#default_value' => variable_get('smumm_MenuElegido'),
     '#options' => $los_menus,
     '#description' => t('Elige el menu a utilizar:'),
     );
