@@ -27,6 +27,13 @@ function smumm_admin ($form, &$form_state) {
   $los_menus = menu_get_menus(TRUE);
   print_r($los_menus);
 
+  if (isset(variable_get(eligeMenu))) {
+    print_r(variable_get(eligeMenu));
+  }
+  if (isset(variable_get(eligePagina))) {
+    print_r(variable_get(eligePagina));
+  }
+
   $form = array();
 
   $form['eligeMenu'] = array(
