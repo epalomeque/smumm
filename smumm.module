@@ -37,7 +37,7 @@ function smumm_admin ($form, &$form_state) {
     '#description' => t('El menu que se mostrara en la pagina seleccionada'),
     );
 
-  $form['eligePagina'] 
+  $form['eligePagina'] = array(
     '#type' => 'textfield',
     '#title' => t('Página destino'),
     '#default_value' => variable_get('eligePagina',''),,
