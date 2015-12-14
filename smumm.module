@@ -28,9 +28,11 @@ function smumm_admin ($form, &$form_state) {
   print_r($los_menus);
 
   if ( variable_get('eligeMenu') != null ) {
+    print ':::: eligeMenu: ';
     print_r(variable_get('eligeMenu'));
   } else { print 'eligeMenu es null';}
   if ( variable_get('eligePagina') != null ) {
+    print ':::: eligePagina: ';
     print_r(variable_get('eligePagina'));
   } else { print 'eligePagina es null';}
 
