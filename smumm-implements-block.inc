@@ -29,17 +29,22 @@
   function smumm_crea_menu() {
 
   if ( variable_get('eligeMenu') != null ) {
-    $smumm_menu_block = menu_load(variable_get('eligeMenu'));
-    print '<br />:::smumm_menu_block<br />';
-    print_r($smumm_menu_block);
+    $smumm_menu_tree = menu_tree(variable_get('eligeMenu'));
+    print '<br />:::smumm_menu_tree<br />';
+    print_r($smumm_menu_tree);
+    
+    // $smumm_menu_block = menu_load(variable_get('eligeMenu'));
+    // print '<br />:::smumm_menu_block<br />';
+    // print_r($smumm_menu_block);
 
-    $smumm_menu_block_all = menu_load_all(variable_get('eligeMenu'));
-    print '<br />:::smumm_menu_block_all<br />';
-    print_r($smumm_menu_block_all);
+    // $smumm_menu_block_all = menu_load_all(variable_get('eligeMenu'));
+    // print '<br />:::smumm_menu_block_all<br />';
+    // print_r($smumm_menu_block_all);
 
-    $smumm_menu_block_links = menu_load_links(variable_get('eligeMenu'));
-    print '<br />:::smumm_menu_block_links<br />';
-    print_r($smumm_menu_block_links);    
+    // $smumm_menu_block_links = menu_load_links(variable_get('eligeMenu'));
+    // print '<br />:::smumm_menu_block_links<br />';
+    // print_r($smumm_menu_block_links);    
+
   } else { 
     $smumm_menu_block = 'eligeMenu es null';
   }
