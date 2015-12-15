@@ -1,5 +1,12 @@
 <?php
 
+  drupal_add_css(
+    drupal_get_path('module', 'smumm') . '/css/smumm-styles.css', 
+    array(
+      'group' => CSS_DEFAULT, 'every_page' => TRUE
+    )
+  );
+
   // Implementacion del bloque de menu en <front>
   // Implementa hook_block_info()
   function smumm_block_info() {
@@ -36,7 +43,6 @@
     //dpm ($smumm_menu_navigation, 'smumm_menu_navigation');
     
     $smumm_menu_navigation = menu_tree( variable_get('eligeMenu') );
-    dpm ($smumm_menu_navigation, 'smumm_menu_navigation');
 
     // $smumm_menu_render = drupal_render($smumm_menu_navigation);
     // dpm ($smumm_menu_render, 'smumm_menu_render');
