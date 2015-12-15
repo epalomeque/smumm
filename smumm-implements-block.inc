@@ -26,7 +26,7 @@
         // Título del bloque.
         $block['subject'] = t('Menu SMUMM');
         // Función que retorna el contenido o función que se quiere en el bloque.
-        $block['content'] = smumm_crea_menu();
+        $block['content'] = drupal_render( smumm_crea_menu() );
         break;
       }
       return $block;
@@ -36,7 +36,7 @@
   function smumm_crea_menu() {
 
   if ( variable_get('eligeMenu') != null ) {
-    $smumm_menu_render = drupal_render( menu_navigation_links(variable_get('eligeMenu'), 0) );
+    $smumm_menu_render =  menu_navigation_links(variable_get('eligeMenu'), 0);
     // ****** Este es el bueno 
     //$smumm_menu_navigation = menu_tree( variable_get('eligeMenu') );
     
@@ -49,7 +49,7 @@
     $smumm_menu_navigation = 'Debes elegir un menu en la página de configuración';
   }
 
-  return $smumm_menu_navigation;
+  return $smumm_menu_render;
   }
 
 ?>
