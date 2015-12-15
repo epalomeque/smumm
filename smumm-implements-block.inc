@@ -36,11 +36,13 @@
   function smumm_crea_menu() {
 
   if ( variable_get('eligeMenu') != null ) {
+    $smumm_menu_render = drupal_render( menu_navigation_links(variable_get('eligeMenu'), 0) );
+    // ****** Este es el bueno 
+    //$smumm_menu_navigation = menu_tree( variable_get('eligeMenu') );
+    
     //$smumm_menu_navigation = menu_navigation_links(variable_get('eligeMenu'), 0);
     //dpm ($smumm_menu_navigation, 'smumm_menu_navigation');
     
-    $smumm_menu_navigation = menu_tree( variable_get('eligeMenu') );
-
     // $smumm_menu_render = drupal_render($smumm_menu_navigation);
     // dpm ($smumm_menu_render, 'smumm_menu_render');
   } else { 
