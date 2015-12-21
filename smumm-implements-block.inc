@@ -43,9 +43,11 @@
   if ( variable_get('eligeMenu') != null ) {
     // ****** Este es el bueno 
     //$smumm_menu_navigation = menu_tree( $mimenuelegido );
-    
-    $menu = menu_navigation_links($mimenuelegido);
-    dpm($menu, 'menu');
+
+
+    $menu = menu_load_links($menu_name);
+    // $menu = menu_navigation_links($mimenuelegido);
+    // dpm($menu, 'menu');
     //return theme('links', $menu);
 
     // $smumm_menu_navigationL1 = 
