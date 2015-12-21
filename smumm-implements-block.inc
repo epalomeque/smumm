@@ -22,7 +22,7 @@
   function smumm_block_view($delta = '') {
     $block = array();
     $smumm_menu_printable = smumm_crea_menu();
-    dpm($smumm_menu_printable, 'smumm_menu_printable');
+    //dpm($smumm_menu_printable, 'smumm_menu_printable');
     switch ($delta) {
       case 'bloque_smumm_menufront':
         // Título del bloque.
@@ -39,13 +39,15 @@
 
   if ( variable_get('eligeMenu') != null ) {
     // ****** Este es el bueno 
-    //$smumm_menu_navigation = menu_tree( variable_get('eligeMenu') );
+    $smumm_menu_navigation = menu_tree( variable_get('eligeMenu') );
     
-    $smumm_menu_navigation = menu_navigation_links(variable_get('eligeMenu'), 0);
+    $smumm_menu_navigation2 = 
+      menu_navigation_links( variable_get('eligeMenu'), 0 );
     
     // $smumm_menu_render = drupal_render($smumm_menu_navigation);
     // dpm ($smumm_menu_render, 'smumm_menu_render');
     dpm($smumm_menu_navigation, 'smumm_menu_navigation');
+    dpm($smumm_menu_navigation2, 'smumm_menu_navigation2');
   } else { 
     $smumm_menu_navigation = 'Debes elegir un menu en la página de configuración';
   }
