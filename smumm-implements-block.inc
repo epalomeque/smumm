@@ -46,7 +46,7 @@
     $smumm_menu_navigationL1 = 
       menu_navigation_links( $mimenuelegido, 0 );
     $smumm_menu_navigationL11 = 
-      menu_navigation_links( $smumm_menu_navigationL1['menu-513'], 0 );      
+      menu_navigation_links( $smumm_menu_navigationL1['513'], 0 );      
     $smumm_menu_navigationL2 = 
       menu_navigation_links( $mimenuelegido, 1 );
     $smumm_menu_navigationL3 = 
