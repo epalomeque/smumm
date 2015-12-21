@@ -45,7 +45,7 @@
     //$smumm_menu_navigation = menu_tree( $mimenuelegido );
     
     $menu = menu_navigation_links($mimenuelegido);
-    $dpm($menu, 'menu');
+    dpm($menu, 'menu');
     //return theme('links', $menu);
 
     // $smumm_menu_navigationL1 = 
