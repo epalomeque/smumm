@@ -36,7 +36,7 @@
   function smumm_crea_menu() {
 
   if ( variable_get('eligeMenu') != null ) {
-    //$smumm_menu_render =  menu_navigation_links(variable_get('eligeMenu'), 0);
+    //$smumm_menu_navigation =  menu_navigation_links(variable_get('eligeMenu'), 0);
     // ****** Este es el bueno 
     $smumm_menu_navigation = menu_tree( variable_get('eligeMenu') );
     
@@ -49,7 +49,7 @@
     $smumm_menu_navigation = 'Debes elegir un menu en la página de configuración';
   }
 
-  return $smumm_menu_render;
+  return $smumm_menu_navigation;
   }
 
 ?>
