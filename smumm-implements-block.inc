@@ -44,7 +44,7 @@
     // ****** Este es el bueno 
     //$smumm_menu_navigation = menu_tree( $mimenuelegido );
     
-    $menu = menu_navigation_links("secondary-links");
+    $menu = menu_navigation_links($mimenuelegido);
     //return theme('links', $menu);
 
     // $smumm_menu_navigationL1 = 
