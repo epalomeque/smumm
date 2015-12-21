@@ -46,7 +46,7 @@
     $smumm_menu_navigationL1 = 
       menu_navigation_links( $mimenuelegido, 0 );
     $smumm_menu_navigationL11 = 
-      menu_navigation_links( $smumm_menu_navigationL1['513'], 0 );      
+      menu_navigation_links( $smumm_menu_navigation, 0 );      
     $smumm_menu_navigationL2 = 
       menu_navigation_links( $mimenuelegido, 1 );
     $smumm_menu_navigationL3 = 
@@ -57,7 +57,7 @@
     dpm($mimenuelegido, 'mimenuelegido');
     dpm($smumm_menu_navigation, 'smumm_menu_navigation');
     dpm($smumm_menu_navigationL1, 'smumm_menu_navigationL1');
-    dpm($smumm_menu_navigationL11, 'smumm_menu_navigationL11');
+    dpm($smumm_menu_navigationL11, 'smumm_menu_navigationL11**');
     dpm($smumm_menu_navigationL2, 'smumm_menu_navigationL2');
     dpm($smumm_menu_navigationL3, 'smumm_menu_navigationL3');    
   } else { 
