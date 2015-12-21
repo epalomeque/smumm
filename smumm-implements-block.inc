@@ -21,12 +21,13 @@
   // Implementa hook_block_view()
   function smumm_block_view($delta = '') {
     $block = array();
+    $smumm_menu_printable = smumm_crea_menu();
     switch ($delta) {
       case 'bloque_smumm_menufront':
         // Título del bloque.
         $block['subject'] = t('Menu SMUMM');
         // Función que retorna el contenido o función que se quiere en el bloque.
-        $block['content'] = drupal_render( smumm_crea_menu() );
+        $block['content'] = drupal_render( $smumm_menu_printable );
         break;
       }
       return $block;
@@ -36,12 +37,10 @@
   function smumm_crea_menu() {
 
   if ( variable_get('eligeMenu') != null ) {
-    //$smumm_menu_navigation =  menu_navigation_links(variable_get('eligeMenu'), 0);
     // ****** Este es el bueno 
     $smumm_menu_navigation = menu_tree( variable_get('eligeMenu') );
-    
+    dpm ($smumm_menu_navigation, 'smumm_menu_navigation');
     //$smumm_menu_navigation = menu_navigation_links(variable_get('eligeMenu'), 0);
-    //dpm ($smumm_menu_navigation, 'smumm_menu_navigation');
     
     // $smumm_menu_render = drupal_render($smumm_menu_navigation);
     // dpm ($smumm_menu_render, 'smumm_menu_render');
