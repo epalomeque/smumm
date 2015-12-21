@@ -58,8 +58,7 @@
     // dpm($smumm_menu_navigation, 'smumm_menu_navigation');
     // dpm($smumm_menu_navigationL1, 'smumm_menu_navigationL1');
     // dpm($smumm_menu_navigationL11, 'smumm_menu_navigationL11');
-
-  else { 
+  } else { 
     $smumm_menu_navigation = 'Debes elegir un menu en la página de configuración';
   }
 
