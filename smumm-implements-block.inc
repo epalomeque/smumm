@@ -29,7 +29,7 @@
         $block['subject'] = t('Menu SMUMM');
         // Función que retorna el contenido o función que se quiere en el bloque.
         //$block['content'] = drupal_render( $smumm_menu_printable );
-        $block['content'] = theme('links', $smumm_menu_printable );
+        $block['content'] = print theme('links', $smumm_menu_printable );
         break;
       }
       return $block;
@@ -47,7 +47,7 @@
 
     $menu = menu_load_links($mimenuelegido);
     // $menu = menu_navigation_links($mimenuelegido);
-    // dpm($menu, 'menu');
+    dpm($menu, 'menu');
     //return theme('links', $menu);
 
     // $smumm_menu_navigationL1 = 
