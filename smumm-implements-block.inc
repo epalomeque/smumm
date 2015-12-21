@@ -42,13 +42,19 @@
     // ****** Este es el bueno 
     $smumm_menu_navigation = menu_tree( variable_get('eligeMenu') );
     
-    $smumm_menu_navigation2 = 
+    $smumm_menu_navigationL1 = 
       menu_navigation_links( variable_get('eligeMenu'), 0 );
+    $smumm_menu_navigationL2 = 
+      menu_navigation_links( variable_get('eligeMenu'), 1 );
+    $smumm_menu_navigationL3 = 
+      menu_navigation_links( variable_get('eligeMenu'), 2 );
     
     // $smumm_menu_render = drupal_render($smumm_menu_navigation);
     // dpm ($smumm_menu_render, 'smumm_menu_render');
     dpm($smumm_menu_navigation, 'smumm_menu_navigation');
-    dpm($smumm_menu_navigation2, 'smumm_menu_navigation2');
+    dpm($smumm_menu_navigationL1, 'smumm_menu_navigationL1');
+    dpm($smumm_menu_navigationL2, 'smumm_menu_navigationL2');
+    dpm($smumm_menu_navigationL3, 'smumm_menu_navigationL3');    
   } else { 
     $smumm_menu_navigation = 'Debes elegir un menu en la página de configuración';
   }
