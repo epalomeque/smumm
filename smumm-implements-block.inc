@@ -28,7 +28,8 @@
         // Título del bloque.
         $block['subject'] = t('Menu SMUMM');
         // Función que retorna el contenido o función que se quiere en el bloque.
-        $block['content'] = drupal_render( $smumm_menu_printable );
+        //$block['content'] = drupal_render( $smumm_menu_printable );
+        $block['content'] = theme('links', $smumm_menu_printable );
         break;
       }
       return $block;
@@ -41,25 +42,28 @@
 
   if ( variable_get('eligeMenu') != null ) {
     // ****** Este es el bueno 
-    $smumm_menu_navigation = menu_tree( $mimenuelegido );
+    //$smumm_menu_navigation = menu_tree( $mimenuelegido );
     
-    $smumm_menu_navigationL1 = 
-      menu_navigation_links( $mimenuelegido, 0 );
-    $smumm_menu_navigationL11 = 
-      //menu_navigation_links( $smumm_menu_navigation, 0 );      
-      menu_tree_page_data($mimenuelegido);
+    $menu = menu_navigation_links("secondary-links");
+    //return theme('links', $menu);
+
+    // $smumm_menu_navigationL1 = 
+    //   menu_navigation_links( $mimenuelegido, 0 );
+    // $smumm_menu_navigationL11 = 
+    //   menu_tree_page_data($mimenuelegido);
     
     // $smumm_menu_render = drupal_render($smumm_menu_navigation);
     // dpm ($smumm_menu_render, 'smumm_menu_render');
-    dpm($mimenuelegido, 'mimenuelegido');
-    dpm($smumm_menu_navigation, 'smumm_menu_navigation');
-    dpm($smumm_menu_navigationL1, 'smumm_menu_navigationL1');
-    dpm($smumm_menu_navigationL11, 'smumm_menu_navigationL11');
-    else { 
+    // dpm($mimenuelegido, 'mimenuelegido');
+    // dpm($smumm_menu_navigation, 'smumm_menu_navigation');
+    // dpm($smumm_menu_navigationL1, 'smumm_menu_navigationL1');
+    // dpm($smumm_menu_navigationL11, 'smumm_menu_navigationL11');
+
+  else { 
     $smumm_menu_navigation = 'Debes elegir un menu en la página de configuración';
   }
 
-  return $smumm_menu_navigation;
+  return $menu;
   }
 
 ?>
