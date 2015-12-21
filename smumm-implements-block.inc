@@ -36,6 +36,7 @@
 
   // Implementa funcion hook_boton_editar()
   function smumm_crea_menu() {
+  drupal_set_message();
 
   if ( variable_get('eligeMenu') != null ) {
     // ****** Este es el bueno 
