@@ -22,21 +22,13 @@
   function smumm_block_view($delta = '') {
     $block = array();
     $smumm_menu_parender = smumm_crea_menu();
-    dpm($smumm_menu_parender, 'smumm_menu_parender');
-
-    $smumm_menu_printable = theme('links', $smumm_menu_parender );
-    dpm($smumm_menu_printable, 'smumm_menu_printable');
-
-    $smumm_menu_render = drupal_render($smumm_menu_printable);
-    dpm($smumm_menu_render, 'smumm_menu_render');    
-    //dpm($smumm_menu_printable, 'smumm_menu_printable');
     switch ($delta) {
       case 'bloque_smumm_menufront':
         // Título del bloque.
         $block['subject'] = t('Menu SMUMM');
         // Función que retorna el contenido o función que se quiere en el bloque.
         //$block['content'] = drupal_render( $smumm_menu_printable );
-        $block['content'] = $smumm_menu_render;
+        $block['content'] = drupal_render($smumm_menu_parender);
         break;
       }
       return $block;
@@ -48,13 +40,6 @@
   $mimenuelegido = variable_get('eligeMenu');
 
   if ( variable_get('eligeMenu') != null ) {
-    // ****** Este es el bueno 
-    //$smumm_menu_navigation = menu_tree( $mimenuelegido );
-    // $menu = menu_navigation_links($mimenuelegido);
-    //return theme('links', $menu);
-
-    $menu = menu_load_links($mimenuelegido);
-    dpm($menu, 'menu_load_links_func');
 
     $menu2 = menu_build_tree($mimenuelegido);
     dpm($menu2, 'menu_build_tree_func');
@@ -63,9 +48,6 @@
     dpm($menu3, 'menu_tree_func');
 
     $menu4 = menu_tree_all_data($mimenuelegido);
-    dpm($menu4, 'menu_tree_all_data_func');
-
-    $menu5 = menu_tree_all_data($mimenuelegido);
     dpm($menu4, 'menu_tree_all_data_func');
 
     // $smumm_menu_navigationL1 = 
@@ -83,7 +65,7 @@
     $smumm_menu_navigation = 'Debes elegir un menu en la página de configuración';
   }
 
-  return $menu;
+  return $menu3;
   }
 
 ?>
