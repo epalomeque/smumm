@@ -22,7 +22,7 @@
   function smumm_block_view($delta = '') {
     $block = array();
     $smumm_menu_parender = smumm_crea_menu();
-    dpm($menu, 'menu');
+    dpm($menu, 'menu_view');
     $smumm_menu_printable = theme('links', $smumm_menu_parender );
 
     //dpm($smumm_menu_printable, 'smumm_menu_printable');
@@ -50,7 +50,7 @@
 
     $menu = menu_load_links($mimenuelegido);
     // $menu = menu_navigation_links($mimenuelegido);
-    dpm($menu, 'menu');
+    dpm($menu, 'menu_func');
     //return theme('links', $menu);
 
     // $smumm_menu_navigationL1 = 
