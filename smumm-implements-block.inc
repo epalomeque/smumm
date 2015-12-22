@@ -23,7 +23,7 @@
     $block = array();
     $smumm_menu_parender = smumm_crea_menu();
     dpm($menu, 'menu');
-    $smumm_menu_printable = $theme('links', $smumm_menu_parender );
+    $smumm_menu_printable = theme('links', $smumm_menu_parender );
 
     //dpm($smumm_menu_printable, 'smumm_menu_printable');
     switch ($delta) {
