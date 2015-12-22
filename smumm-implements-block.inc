@@ -27,7 +27,7 @@
     $smumm_menu_printable = theme('links', $smumm_menu_parender );
     dpm($smumm_menu_printable, 'smumm_menu_printable');
 
-    $smumm_menu_render = drupal_render($smumm_menu_printable)
+    $smumm_menu_render = drupal_render($smumm_menu_printable);
     dpm($smumm_menu_render, 'smumm_menu_render');    
     //dpm($smumm_menu_printable, 'smumm_menu_printable');
     switch ($delta) {
