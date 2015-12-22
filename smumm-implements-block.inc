@@ -50,12 +50,23 @@
   if ( variable_get('eligeMenu') != null ) {
     // ****** Este es el bueno 
     //$smumm_menu_navigation = menu_tree( $mimenuelegido );
-
+    // $menu = menu_navigation_links($mimenuelegido);
+    //return theme('links', $menu);
 
     $menu = menu_load_links($mimenuelegido);
-    // $menu = menu_navigation_links($mimenuelegido);
-    dpm($menu, 'menu_func');
-    //return theme('links', $menu);
+    dpm($menu, 'menu_load_links_func');
+
+    $menu2 = menu_build_tree($mimenuelegido);
+    dpm($menu2, 'menu_build_tree_func');
+
+    $menu3 = menu_tree($mimenuelegido);
+    dpm($menu3, 'menu_tree_func');
+
+    $menu4 = menu_tree_all_data($mimenuelegido);
+    dpm($menu4, 'menu_tree_all_data_func');
+
+    $menu5 = menu_tree_all_data($mimenuelegido);
+    dpm($menu4, 'menu_tree_all_data_func');
 
     // $smumm_menu_navigationL1 = 
     //   menu_navigation_links( $mimenuelegido, 0 );
