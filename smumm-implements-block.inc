@@ -22,6 +22,7 @@
   function smumm_block_view($delta = '') {
     $block = array();
     $smumm_menu_parender = smumm_crea_menu();
+    dpm($menu, 'menu');
     $smumm_menu_printable = $theme('links', $smumm_menu_parender );
 
     //dpm($smumm_menu_printable, 'smumm_menu_printable');
@@ -31,7 +32,7 @@
         $block['subject'] = t('Menu SMUMM');
         // Función que retorna el contenido o función que se quiere en el bloque.
         //$block['content'] = drupal_render( $smumm_menu_printable );
-        $block['content'] = drupal_render($smumm_menu_printable);
+        $block['content'] = print ($smumm_menu_printable);
         break;
       }
       return $block;
