@@ -40,20 +40,18 @@
 
   if ( variable_get('eligeMenu') != null ) {
 
-    // $menu2 = menu_build_tree($mimenuelegido);
-    // dpm($menu2, 'menu_build_tree_func');
-
     $menu3 = menu_tree($mimenuelegido);
     dpm($menu3, 'menu_tree_func');
 
-    // $menu4 = menu_tree_all_data($mimenuelegido);
-    // dpm($menu4, 'menu_tree_all_data_func');
+    $mihtml = "<h3>MLK menu en html</h3>";
 
   } else { 
     $smumm_menu_navigation = 'Debes elegir un menu en la página de configuración';
   }
 
-  return $menu3;
+  return $mihtml;
   }
+
+  
 
 ?>
