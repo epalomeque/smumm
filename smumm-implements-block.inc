@@ -49,7 +49,7 @@
     foreach ($menu3 as $item ) {
       $mihtml .= "<p>". $item['#title']. "</p> <br />";
       $mihtml .= "<p>";
-      if isset($item['#href']) && !empty($item['#href']) {
+      if ( isset($item['#href']) && !empty($item['#href']) ) {
         $mihtml .= "/";
       } else {$mihtml .= "#href NOT FOUND";}
       $mihtml .= "</p> <br />";
