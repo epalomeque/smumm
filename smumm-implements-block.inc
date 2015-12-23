@@ -44,6 +44,27 @@
     dpm($menu3, 'menu_tree_func');
 
     $mihtml = "<h3>MLK menu en html</h3>";
+    $mihtml .= "<ul>";
+
+    foreach ($menu3 as $item ) {
+      if isset($item['#href']) {
+        $mihtml .= "<li>";
+        $mihtml .= "<a href="
+        if ($item['#href'] == '<front>') {
+          $mihtml .= "'/' >";
+        }
+        else {
+          $mihtml .= $item['#href']. " >";
+        }
+        
+        $mihtml .= "<p>". $item['#title'] . "</p>";
+        $mihtml .= "<p>". $item['#localized_options']['attributes']['tittle'] . "</p>";
+        $mihtml .= "</a>"
+        $mihtml .= "</li>";
+      }
+    }
+
+    $mihtml .= "</ul>";
 
   } else { 
     $smumm_menu_navigation = 'Debes elegir un menu en la página de configuración';
