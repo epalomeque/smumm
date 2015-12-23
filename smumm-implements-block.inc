@@ -47,8 +47,12 @@
     $mihtml .= "<ul>";
 
     foreach ($menu3 as $item ) {
-      $mihtml .= "<p>". print_r($item['#title']). "</p> <br />";
-      $mihtml .= "<p>". print_r($item['#href']). "</p> <br />";
+      $mihtml .= "<p>". $item['#title']. "</p> <br />";
+      $mihtml .= "<p>";
+      if isset($item['#href']) && !empty($item['#href']) {
+        $mihtml .= "/";
+      } else {$mihtml .= "#href NOT FOUND";}
+      $mihtml .= "</p> <br />";
       $mihtml .= "----------------------------------<br />";
     }
     // foreach ($menu3 as $item ) {
