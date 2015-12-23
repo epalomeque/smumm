@@ -46,10 +46,9 @@
     $mihtml = "<h3>MLK menu en html</h3>";
     $mihtml .= "<ul>";
 
-    $mihtml .= print_r($menu3);
-
     foreach ($menu3 as $item ) {
-      $mihtml .= "<p>". print_r($item). "</p> <br />";
+      $mihtml .= "<p>". print_r($item['#title']). "</p> <br />";
+      $mihtml .= "<p>". print_r($item['#href']). "</p> <br />";
       $mihtml .= "----------------------------------<br />";
     }
     // foreach ($menu3 as $item ) {
