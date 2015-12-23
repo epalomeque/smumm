@@ -47,6 +47,10 @@
     $mihtml .= "<ul>";
 
     $mihtml .= print_r($menu3);
+
+    foreach ($menu3 as $item ) {
+      $mihtml .= "<p>". print_r($item). "</p> <br />";
+    }
     // foreach ($menu3 as $item ) {
     //   if isset($item['#href']) {
     //     $mihtml .= "<li>";
