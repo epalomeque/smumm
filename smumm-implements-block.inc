@@ -50,6 +50,7 @@
 
     foreach ($menu3 as $item ) {
       $mihtml .= "<p>". print_r($item). "</p> <br />";
+      $mihtml .= "----------------------------------<br />";
     }
     // foreach ($menu3 as $item ) {
     //   if isset($item['#href']) {
