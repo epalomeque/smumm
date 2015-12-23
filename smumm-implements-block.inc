@@ -48,10 +48,10 @@
 
     foreach ($menu3 as $item ) {
       if ( isset($item['#href']) && !empty($item['#href']) ) {
-        $mihtml .= "<li> <a href='". $item['#href'] . "'>";
-        $mihtml .= "<p>title: ". $item['#title']. "</p> <br />";
-        $mihtml .= "<p>options:". $item['#localized_options']['attributes']['title'];
-        $mihtml .= "</p>";
+        $milink = ($item['#href'] == '<front>') ? "/" : $item['#href'] ;
+        $mihtml .= "<li> <a href='". $milink . "'>";
+        $mihtml .= "title: ". $item['#title']. "<br />";
+        $mihtml .= "options:". $item['#localized_options']['attributes']['title'];
         $mihtml .= "</a>";
         $mihtml .= "</li>";
       }
