@@ -49,8 +49,8 @@
     foreach ($menu3 as $item ) {
       if ( isset($item['#href']) && !empty($item['#href']) ) {
         $mihtml .= "<li> <a href='". $item['#href'] . "'>";
-        $mihtml .= "<p>". $item['#title']. "</p> <br />";
-        $mihtml .= "<p>". $item['#localized_options']['attributes']['tittle'];
+        $mihtml .= "<p>title: ". $item['#title']. "</p> <br />";
+        $mihtml .= "<p>options:". $item['#localized_options']['attributes']['title'];
         $mihtml .= "</p>";
         $mihtml .= "</a>";
         $mihtml .= "</li>";
