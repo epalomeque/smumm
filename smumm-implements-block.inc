@@ -47,31 +47,15 @@
     $mihtml .= "<ul>";
 
     foreach ($menu3 as $item ) {
-      $mihtml .= "<p>". $item['#title']. "</p> <br />";
-      $mihtml .= "<p>";
       if ( isset($item['#href']) && !empty($item['#href']) ) {
-        $mihtml .= "/";
-      } else {$mihtml .= "#href NOT FOUND";}
-      $mihtml .= "</p> <br />";
-      $mihtml .= "----------------------------------<br />";
+        $mihtml .= "<li> <a href='". $item['#href'] . "'>";
+        $mihtml .= "<p>". $item['#title']. "</p> <br />";
+        $mihtml .= "<p>". $item['#localized_options']['attributes']['tittle'];
+        $mihtml .= "</p>";
+        $mihtml .= "</a>";
+        $mihtml .= "</li>";
+      }
     }
-    // foreach ($menu3 as $item ) {
-    //   if isset($item['#href']) {
-    //     $mihtml .= "<li>";
-    //     $mihtml .= "<a href="
-    //     if ($item['#href'] == '<front>') {
-    //       $mihtml .= "'/' >";
-    //     }
-    //     else {
-    //       $mihtml .= $item['#href']. " >";
-    //     }
-        
-    //     $mihtml .= "<p>". $item['#title'] . "</p>";
-    //     $mihtml .= "<p>". $item['#localized_options']['attributes']['tittle'] . "</p>";
-    //     $mihtml .= "</a>"
-    //     $mihtml .= "</li>";
-    //   }
-    // }
 
     $mihtml .= "</ul>";
 
