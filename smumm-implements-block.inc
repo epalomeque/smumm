@@ -54,8 +54,8 @@
           $misclases .= $lasclases . " ";
         }        
 
-        $mihtml .= "<li class=". $misclases;
-        $mihtml .= "> <a href='". $milink . "'>";
+        $mihtml .= "<li class='". $misclases;
+        $mihtml .= "'> <a href='". $milink . "'>";
         $mihtml .= "title: ". $item['#title']. "<br />";
         $mihtml .= "options:". $item['#localized_options']['attributes']['title'];
         $mihtml .= "</a>";
