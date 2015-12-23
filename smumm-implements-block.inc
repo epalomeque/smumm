@@ -41,7 +41,7 @@
   if ( variable_get('eligeMenu') != null ) {
 
     $menu3 = menu_tree($mimenuelegido);
-    dpm($menu3, 'menu_tree_func');
+    // dpm($menu3, 'menu_tree_func');
 
     $mihtml = "<h3>MLK menu en html</h3>";
     $mihtml .= "<ul>";
@@ -49,7 +49,12 @@
     foreach ($menu3 as $item ) {
       if ( isset($item['#href']) && !empty($item['#href']) ) {
         $milink = ($item['#href'] == '<front>') ? "/" : $item['#href'] ;
-        $mihtml .= "<li> <a href='". $milink . "'>";
+        foreach ($item['#attributes']['class'] as $lasclases) {
+          $misclases .= $lasclases . " ";
+        }        
+
+        $mihtml .= "<li class=". $misclases;
+        $mihtml .= "> <a href='". $milink . "'>";
         $mihtml .= "title: ". $item['#title']. "<br />";
         $mihtml .= "options:". $item['#localized_options']['attributes']['title'];
         $mihtml .= "</a>";
@@ -65,7 +70,5 @@
 
   return $mihtml;
   }
-
-  
 
 ?>
