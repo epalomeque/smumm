@@ -47,6 +47,7 @@
     $mihtml .= "<ul>";
 
     foreach ($menu3 as $item ) {
+      $misclases = "";
       if ( isset($item['#href']) && !empty($item['#href']) ) {
         $milink = ($item['#href'] == '<front>') ? "/" : $item['#href'] ;
         foreach ($item['#attributes']['class'] as $lasclases) {
