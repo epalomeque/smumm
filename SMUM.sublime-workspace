@@ -75,17 +75,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "<?php\n\n  drupal_add_css(\n    drupal_get_path('module', 'smumm') . '/css/smumm-styles.css', \n    array(\n      'group' => CSS_DEFAULT, 'every_page' => TRUE\n    )\n  );\n\n  // Implementacion del bloque de menu en <front>\n  // Implementa hook_block_info()\n  function smumm_block_info() {\n      $blocks['bloque_smumm_menufront'] = array(\n      // Título del bloque en la configuración del administrador \n      'info' => t('Menu SMUMM'),\n      'cache' => DRUPAL_NO_CACHE,\n    );\n    return $blocks;\n  }\n\n  // Implementa hook_block_view()\n  function smumm_block_view($delta = '') {\n    $block = array();\n    $smumm_menu_parender = smumm_crea_menu();\n    dpm($menu, 'menu');\n    $smumm_menu_printable = $theme('links', $smumm_menu_parender );\n\n    //dpm($smumm_menu_printable, 'smumm_menu_printable');\n    switch ($delta) {\n      case 'bloque_smumm_menufront':\n        // Título del bloque.\n        $block['subject'] = t('Menu SMUMM');\n        // Función que retorna el contenido o función que se quiere en el bloque.\n        //$block['content'] = drupal_render( $smumm_menu_printable );\n        $block['content'] = drupal_render($smumm_menu_printable);\n        break;\n      }\n      return $block;\n  }\n\n  // Implementa funcion hook_boton_editar()\n  function smumm_crea_menu() {\n  drupal_set_message();\n  $mimenuelegido = variable_get('eligeMenu');\n\n  if ( variable_get('eligeMenu') != null ) {\n    // ****** Este es el bueno \n    //$smumm_menu_navigation = menu_tree( $mimenuelegido );\n\n\n    $menu = menu_load_links($mimenuelegido);\n    // $menu = menu_navigation_links($mimenuelegido);\n    dpm($menu, 'menu');\n    //return theme('links', $menu);\n\n    // $smumm_menu_navigationL1 = \n    //   menu_navigation_links( $mimenuelegido, 0 );\n    // $smumm_menu_navigationL11 = \n    //   menu_tree_page_data($mimenuelegido);\n    \n    // $smumm_menu_render = drupal_render($smumm_menu_navigation);\n    // dpm ($smumm_menu_render, 'smumm_menu_render');\n    // dpm($mimenuelegido, 'mimenuelegido');\n    // dpm($smumm_menu_navigation, 'smumm_menu_navigation');\n    // dpm($smumm_menu_navigationL1, 'smumm_menu_navigationL1');\n    // dpm($smumm_menu_navigationL11, 'smumm_menu_navigationL11');\n  } else { \n    $smumm_menu_navigation = 'Debes elegir un menu en la página de configuración';\n  }\n\n  return $menu;\n  }\n\n?>\n",
-			"file": "smumm-implements-block.inc",
-			"file_size": 2279,
-			"file_write_time": 1450737826000000,
-			"settings":
-			{
-				"buffer_size": 2296,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -115,6 +104,9 @@
 	},
 	"file_history":
 	[
+		"/home/epalomeque/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/epalomeque/Documentos/01-En_proceso/smumm/Drupal.sublime-projectcompletions",
+		"/home/epalomeque/Documentos/01-En_proceso/smumm/smumm-implements-block.inc",
 		"/home/emmanuel/Documentos/01-En_proceso/smumm/smumm-implements-block.inc",
 		"/home/emmanuel/Documentos/01-En_proceso/smumm/css/smumm-styles.css",
 		"/home/emmanuel/Documentos/01-En_proceso/smumm/smumm.module",
@@ -239,10 +231,7 @@
 		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap_intermedio/template.php",
 		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/bootstrap.api.php",
 		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/templates/system/region.vars.php",
-		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/templates/system/page.vars.php",
-		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/includes/common.inc",
-		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/template.php",
-		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/templates/system/html.vars.php"
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/templates/system/page.vars.php"
 	],
 	"find":
 	{
@@ -329,37 +318,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "smumm-implements-block.inc",
-					"settings":
-					{
-						"buffer_size": 2296,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								619,
-								619
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 203.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -423,6 +383,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 86.0,
+	"side_bar_width": 242.0,
 	"status_bar_visible": true
 }
