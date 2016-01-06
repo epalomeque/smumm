@@ -33,7 +33,7 @@
       return $block;
   }
 
-  // Implementa funcion hook_boton_editar()
+ 
   function smumm_crea_menu() {
   drupal_set_message();
   $mimenuelegido = variable_get('eligeMenu');
@@ -43,7 +43,13 @@
     $menu3 = menu_tree($mimenuelegido);
     // dpm($menu3, 'menu_tree_func');
 
-    $mihtml = "<h3>MLK menu en html</h3>";
+    $mihtml = "<div class='container'>";
+
+    $mihtml .= "<div class='row'>";
+    $mihtml .= "<div class='col-sm-12'>";
+
+    $mihtml .= "<h3>MLK menu en html</h3> </div> </div>";
+    $mihtml .= "<div class='row'>";
     $mihtml .= "<ul>";
 
     foreach ($menu3 as $item ) {
@@ -54,16 +60,19 @@
           $misclases .= $lasclases . " ";
         }        
 
+        $mihtml .= "<div class='col-sm-4'>";
         $mihtml .= "<li class='". $misclases;
         $mihtml .= "'> <a href='". $milink . "'>";
         $mihtml .= "title: ". $item['#title']. "<br />";
         $mihtml .= "options:". $item['#localized_options']['attributes']['title'];
         $mihtml .= "</a>";
-        $mihtml .= "</li>";
+        $mihtml .= "</li> </div>";
+
       }
     }
 
     $mihtml .= "</ul>";
+    $mihtml .= "</div> </div>";
 
   } else { 
     $smumm_menu_navigation = 'Debes elegir un menu en la página de configuración';
