@@ -1,4 +1,5 @@
 #block-smumm-bloque-smumm-menufront li {
+  display: inline-block;
   width:32%;
   float:left;
 }
