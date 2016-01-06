@@ -47,10 +47,6 @@
 
     $mihtml = "<div class='container'>";
 
-    $mihtml .= "<div class='row'>";
-    $mihtml .= "<div class='col-md-12'>";
-
-    $mihtml .= "<h3>MLK menu en html</h3> </div> </div>";
     $mihtml .= "<ul>";
 
     foreach ($menu3 as $item ) {
@@ -69,8 +65,8 @@
 
         $mihtml .= "<div class='col-md-4'>";
         $mihtml .= "<li class='". $misclases;
-        $mihtml .= "'> <hr /> <a href='". $milink . "'>";
-        $mihtml .= $item['#title']. "<br />";
+        $mihtml .= "'> <hr /> <a href='". $milink . "'> <strong>";
+        $mihtml .= $item['#title']. "</strong><br />";
         $mihtml .= $item['#localized_options']['attributes']['title'];
         $mihtml .= "</a>";
         $mihtml .= "</li> </div>";
