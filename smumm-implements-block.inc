@@ -40,39 +40,49 @@
 
   if ( variable_get('eligeMenu') != null ) {
 
+    $mi_contador = 0;
     $menu3 = menu_tree($mimenuelegido);
+    lvl
     // dpm($menu3, 'menu_tree_func');
 
     $mihtml = "<div class='container'>";
 
     $mihtml .= "<div class='row'>";
-    $mihtml .= "<div class='col-sm-12'>";
+    $mihtml .= "<div class='col-md-12'>";
 
     $mihtml .= "<h3>MLK menu en html</h3> </div> </div>";
-    $mihtml .= "<div class='row'>";
     $mihtml .= "<ul>";
 
     foreach ($menu3 as $item ) {
+
+      $mi_contador++;
+      if ($mi_contador == 1) { $mihtml .= "<div class='row'>"; }
+
       $misclases = "";
+      
       if ( isset($item['#href']) && !empty($item['#href']) ) {
+      
         $milink = ($item['#href'] == '<front>') ? "/" : $item['#href'] ;
         foreach ($item['#attributes']['class'] as $lasclases) {
           $misclases .= $lasclases . " ";
         }        
 
-        $mihtml .= "<div class='col-sm-4'>";
+        $mihtml .= "<div class='col-md-4'>";
         $mihtml .= "<li class='". $misclases;
         $mihtml .= "'> <a href='". $milink . "'>";
         $mihtml .= "title: ". $item['#title']. "<br />";
-        $mihtml .= "options:". $item['#localized_options']['attributes']['title'];
+        $mihtml .= "options:". 
+        $item['#localized_options']['attributes']['title'];
         $mihtml .= "</a>";
         $mihtml .= "</li> </div>";
 
       }
+
+      if ($mi_contador == 3) { $mihtml .= "</div>"; $mi_contador = 0; }
+
     }
 
     $mihtml .= "</ul>";
-    $mihtml .= "</div> </div>";
 
   } else { 
     $smumm_menu_navigation = 'Debes elegir un menu en la página de configuración';
