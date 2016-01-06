@@ -69,8 +69,8 @@
 
         $mihtml .= "<div class='col-md-4'>";
         $mihtml .= "<li class='". $misclases;
-        $mihtml .= "'> <a href='". $milink . "'>";
-        $mihtml .= $item['#title']. "<hr />";
+        $mihtml .= "'> <hr /> <a href='". $milink . "'>";
+        $mihtml .= $item['#title']. "<br />";
         $mihtml .= $item['#localized_options']['attributes']['title'];
         $mihtml .= "</a>";
         $mihtml .= "</li> </div>";
