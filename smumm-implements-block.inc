@@ -73,7 +73,7 @@
 
       }
 
-      if ($mi_contador == 3) { $mihtml .= "</div>"; $mi_contador = 0; }
+      if ( ($mi_contador == 3) || ($item === end($menu3)) ) { $mihtml .= "</div>"; $mi_contador = 0; }
 
     }
 
