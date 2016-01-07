@@ -11,11 +11,7 @@ include 'smumm-implements-block.inc';
 function smumm_menu(){
   // Si existe el nombre de la página entonces 
   // se crea el item de menucon ese nombre
-  if ( variable_get('eligePagina') == null ) {
-    print ':::: eligePagina: ';
-    print_r(variable_get('eligePagina'));
-    variable_set('eligePagina', 'smumm-default');
-  }
+  $mi_ruta = variable_get('eligePagina')."/%/%/%";
 
   // Menu de Administración
   $items['admin/structure/structure/supahmegaultramegamenu'] = array(
@@ -28,7 +24,7 @@ function smumm_menu(){
   );
 
   // Página de menu SMUMM
-  $items[ variable_get('eligePagina') ] = array(
+  $items[ $mi_ruta ] = array(
     'title' => t('Menu grandote de SMUMM (SupahMegaUltraMegaMenu)'),
     'description' => t('Aquí se pinta el menú de SMUMM'),
     'page callback' => 'smumm_eligePagina_view',
@@ -65,9 +61,9 @@ function smumm_admin ($form, &$form_state) {
   $form['eligePagina'] = array(
     '#type' => 'textfield',
     '#title' => t('Página destino'),
-    '#default_value' => variable_get('eligePagina',''),
+    '#default_value' => variable_get('eligePagina','smumm-default'),
     '#maxlength' => 127,
-    '#description' => t('Nombre de la pagina que alojara el SMUMM'),
+    '#description' => t('Nombre de la pagina que alojara el SMUMM, escribir sin / '),
   );
 
   return system_settings_form($form);
