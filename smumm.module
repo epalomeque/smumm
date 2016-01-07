@@ -9,7 +9,13 @@ include 'smumm-implements-block.inc';
 
 // Implementa hook_menu()
 function smumm_menu(){
-    // Menu de Administración
+  // Si existe el nombre de la página entonces 
+  // se crea el item de menucon ese nombre
+  if ( variable_get('eligePagina') == null ) {
+    variable_set('eligePagina', 'smumm-default');
+  }
+
+  // Menu de Administración
   $items['admin/structure/structure/supahmegaultramegamenu'] = array(
     'title' => t('Configuración de SMUMM (SupahMegaUltraMegaMenu)'),
     'description' => t('Configurar el módulo SMUMM'),
@@ -19,13 +25,22 @@ function smumm_menu(){
     'type' => MENU_NORMAL_ITEM,
   );
 
+  // Página de menu SMUMM
+  $items[ variable_get('eligePagina') ] = array(
+    'title' => t('Menu grandote de SMUMM (SupahMegaUltraMegaMenu)'),
+    'description' => t('Aquí se pinta el menú de SMUMM'),
+    'page arguments' => array(0, 'foo'),
+    //'page callback' => 'drupal_get_form',
+    'type' => MENU_CALLBACK,
+  );
+
   return $items;
 }
 
 //Formulario para administración de SMUMM
 function smumm_admin ($form, &$form_state) {
   $los_menus = menu_get_menus(TRUE);
-  print_r($los_menus);
+  //print_r($los_menus);
 
   if ( variable_get('eligeMenu') != null ) {
     print ':::: eligeMenu: ';

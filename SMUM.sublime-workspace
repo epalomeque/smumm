@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"mi",
+				"mi_contador"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
 				"smumm",
 				"smumm_menu_printable"
 			],
@@ -104,9 +112,10 @@
 	},
 	"file_history":
 	[
+		"/home/epalomeque/Documentos/01-En_proceso/smumm/smumm-implements-block.inc",
+		"/home/epalomeque/Documentos/01-En_proceso/smumm/css/smumm-styles.css",
 		"/home/epalomeque/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
 		"/home/epalomeque/Documentos/01-En_proceso/smumm/Drupal.sublime-projectcompletions",
-		"/home/epalomeque/Documentos/01-En_proceso/smumm/smumm-implements-block.inc",
 		"/home/emmanuel/Documentos/01-En_proceso/smumm/smumm-implements-block.inc",
 		"/home/emmanuel/Documentos/01-En_proceso/smumm/css/smumm-styles.css",
 		"/home/emmanuel/Documentos/01-En_proceso/smumm/smumm.module",
@@ -230,8 +239,7 @@
 		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap_intermedio/templates/page.tpl.php",
 		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap_intermedio/template.php",
 		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/bootstrap.api.php",
-		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/templates/system/region.vars.php",
-		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/templates/system/page.vars.php"
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/templates/system/region.vars.php"
 	],
 	"find":
 	{
@@ -249,6 +257,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\"",
 			"mimenuelegido",
 			"variable_get('eligeMenu')",
 			"consulta_padron_proveedores",
