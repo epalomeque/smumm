@@ -83,6 +83,14 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "\nEnviado por mauro72 el 9 Noviembre, 2009 - 13:35\n\nVamos a ver seria algo mas o menos asi:\n\nSe crea el hook a menu para informar a drupal sobre tu nueva pagina:\n\n<?php\n/***  hook menu*/\nfunction my_module_name_menu() { \n  $items['path/to/page'] = array(\n    'title' => t('My title'),\n    'page callback' => 'my_foo',\n    'access arguments' => array('access content'),\n        'type' => MENU_LOCAL_TASK,\n    );\n  return $items;  \n  \n}\n?>\n\nSe crea la funcion que se llama desde el menu que hace todo el trabajo\n<?php\nfunction my_foo() {\n  $items['path/to/page'] = array(\n    //ejemplo simple pero efectivo  \n    $output = 'hola';  \n    return $output;  \n    );\n}\n?>\n\nSe hace un hook a la funcion theme para informar a drupal sobre tu nuevo tpl.php\n<?php\nfunction my_module_name_theme() {\n  //dentro de mi modulo personal creo una carpeta \"templates\" donde  \n  // guardo los archivos tpl.php  \n  $path = drupal_get_path('module', 'my_module_name') .'/templates';  \n  return array(\n    'my_template' => array(\n      'arguments' => array('elemment' => NULL),\n      'path' => $path,\n      'template' => 'my_template',\n      ),\n    );\n}?>\n\nSe crea una funcion preprocess para pasar las variables a tu archivo tpl.php\n<?php\nfunction template_preprocess_my_template($vars) {\n  $vars = array();\n  $vars['saludo'] = my_foo();\n  //devuelve hola.  \n}\n?>\n\npor ultimo se crea el archivo tpl.php, en este caso my_template.tpl.php, y lo grado dentro de la carpeta \"templates\", dentro del la carpeta de mi modulo personalizado.\n<?php\n//$saludo es la variable donde se guardo el valor \"hola\"\n<div class=\"my-class\">\n  <?php print $saludo; ?>\n</div>\n?>\n\nNo hay que olvidar ir a la pagina de performance y limpiar el cache para que drupal detecte los cambios en hechos en el hook de menu y el nuevo archivo tpl.php.\n\nSaludos.\n",
+			"settings":
+			{
+				"buffer_size": 1804,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -114,6 +122,8 @@
 	[
 		"/home/epalomeque/Documentos/01-En_proceso/smumm/smumm.module",
 		"/home/epalomeque/Documentos/01-En_proceso/smumm/smumm-implements-block.inc",
+		"/home/epalomeque/Documentos/aviso_de_privacidad_SA_diciembre_2015.txt",
+		"/home/epalomeque/Documentos/tabla-avisoprivacidad-diciembre2015.html",
 		"/home/epalomeque/Documentos/01-En_proceso/smumm/css/smumm-styles.css",
 		"/home/epalomeque/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
 		"/home/epalomeque/Documentos/01-En_proceso/smumm/Drupal.sublime-projectcompletions",
@@ -237,9 +247,7 @@
 		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--footer.tpl.php",
 		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--sidebar_first.tpl.php",
 		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--sidebar_second.tpl.php",
-		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap_intermedio/templates/page.tpl.php",
-		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap_intermedio/template.php",
-		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/bootstrap.api.php"
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap_intermedio/templates/page.tpl.php"
 	],
 	"find":
 	{
@@ -257,6 +265,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"  ",
+			"td",
+			"\n  ",
 			"\"",
 			"mimenuelegido",
 			"variable_get('eligeMenu')",
@@ -327,8 +338,35 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 1804,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								433,
+								433
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

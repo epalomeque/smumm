@@ -46,7 +46,7 @@
     $mi_contador = 0;
     $menu3 = menu_tree($mimenuelegido);
     
-    // dpm($menu3, 'menu_tree_func');
+    dpm($menu3, 'menu_tree');
 
     $mihtml = "<div class='container'>";
 
