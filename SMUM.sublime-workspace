@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"prin",
+				"printf"
+			],
+			[
 				"mi",
 				"mi_contador"
 			],
@@ -34,10 +38,6 @@
 			[
 				"elige",
 				"eligeMenu"
-			],
-			[
-				"prin",
-				"print_r"
 			],
 			[
 				"variable",
@@ -112,6 +112,7 @@
 	},
 	"file_history":
 	[
+		"/home/epalomeque/Documentos/01-En_proceso/smumm/smumm.module",
 		"/home/epalomeque/Documentos/01-En_proceso/smumm/smumm-implements-block.inc",
 		"/home/epalomeque/Documentos/01-En_proceso/smumm/css/smumm-styles.css",
 		"/home/epalomeque/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
@@ -238,8 +239,7 @@
 		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/open_framework/templates/block--sidebar_second.tpl.php",
 		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap_intermedio/templates/page.tpl.php",
 		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap_intermedio/template.php",
-		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/bootstrap.api.php",
-		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/templates/system/region.vars.php"
+		"/home/emmanuel/Documentos/01-En_proceso/tema_bootstrap/bootstrap/bootstrap.api.php"
 	],
 	"find":
 	{

@@ -28,11 +28,24 @@ function smumm_menu(){
     'title' => t('Menu grandote de SMUMM (SupahMegaUltraMegaMenu)'),
     'description' => t('Aquí se pinta el menú de SMUMM'),
     'page callback' => 'smumm_eligePagina_view',
-    'type' => MENU_CALLBACK,
+    'access arguments' => array('access content'),
+    'type' => MENU_LOCAL_TASK,
   );
 
   return $items;
 }
+
+
+
+  // $items['path/to/page'] = array(
+  //   'title' => t('My title'),
+  //   'page callback' => 'my_foo',
+  //   'access arguments' => array('access content'),
+  //       'type' => MENU_LOCAL_TASK,
+  //   );
+
+
+
 
 //Formulario para administración de SMUMM
 function smumm_admin ($form, &$form_state) {
@@ -86,8 +99,6 @@ function smumm_permission() {
 
 // Pagina de vista para smumm eligePagina
 function smumm_eligePagina_view() {
-  printf("Estoy en la ruta que dicta la pagina");
-  print_r(variable_get('eligePagina')); 
 }
 
 
