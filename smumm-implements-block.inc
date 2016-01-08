@@ -20,6 +20,9 @@
 
   // Implementa hook_block_view()
   function smumm_block_view($delta = '') {
+    dpm(variable_get('eligeMenu'),'$eligeMenu');
+    dpm(variable_get('eligePagina'),'$eligePagina');
+
     $block = array();
     $smumm_menu_parender = smumm_crea_menu();
     switch ($delta) {
