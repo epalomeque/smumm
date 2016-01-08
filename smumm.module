@@ -38,29 +38,11 @@ function smumm_menu(){
 
 
 
-  // $items['path/to/page'] = array(
-  //   'title' => t('My title'),
-  //   'page callback' => 'my_foo',
-  //   'access arguments' => array('access content'),
-  //       'type' => MENU_LOCAL_TASK,
-  //   );
-
-
-
 
 //Formulario para administración de SMUMM
 function smumm_admin ($form, &$form_state) {
   $los_menus = menu_get_menus(TRUE);
   //print_r($los_menus);
-
-  // if ( variable_get('eligeMenu') != null ) {
-  //   print ':::: eligeMenu: ';
-  //   print_r(variable_get('eligeMenu'));
-  // } else { print 'eligeMenu es null';}
-  // if ( variable_get('eligePagina') != null ) {
-  //   print ':::: eligePagina: ';
-  //   print_r(variable_get('eligePagina'));
-  // } else { print 'eligePagina es null';}
 
   $form = array();
 
@@ -100,6 +82,14 @@ function smumm_permission() {
 
 // Pagina de vista para smumm eligePagina
 function smumm_eligePagina_view() {
+
+  if ( variable_get('eligeMenu') != null ) {
+    print ':::: eligeMenu: ';
+    print_r(variable_get('eligeMenu'));
+  } else { print 'eligeMenu es null';}
+  if ( variable_get('eligePagina') != null ) {
+    print ':::: eligePagina: ';
+    print_r(variable_get('eligePagina'));
+  } else { print 'eligePagina es null';}
+
 }
-
-
