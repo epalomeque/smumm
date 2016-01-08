@@ -11,7 +11,8 @@ include 'smumm-implements-block.inc';
 function smumm_menu(){
   // Si existe el nombre de la página entonces 
   // se crea el item de menucon ese nombre
-  $mi_ruta = variable_get('eligePagina')."/%/%/%";
+  //."/%/%/%"
+  $mi_ruta = variable_get('eligePagina');
 
   // Menu de Administración
   $items['admin/structure/structure/supahmegaultramegamenu'] = array(
